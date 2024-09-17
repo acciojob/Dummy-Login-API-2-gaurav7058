@@ -1,12 +1,49 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
-
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
+body{
+    margin: 0;
+    padding: 0;
+}
+.form-data{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
     align-items: center;
+    margin-top: 6rem;
+    width: 34%;
+    border: 1px solid black;
+    padding: 31px;
+    height: 200px;
+}
+.form-input{
+    margin-bottom: 17px;
+    font-size: 20px;
+}
+#input-email{
+    margin-left: 54px;
+}
+.form-input [type="email"], .form-input [type="password"]{
+    width: 305px;
+    margin-left: 24px;
+    padding: 6px;
+    border: 1px solid black;
+    border-radius: 9px;
+}
+/* handle error */
+#user-error{
+    margin-left: 8rem;
+    color: red;
+    font-size: 17px;
+    margin-bottom: -4px;
+    margin-top: 9px;
+}
+#password-error{
+    margin-left: 8rem;
+    font-size: 17px;
+    color: red;
+    margin-bottom: 0px;
+}
+#success{
+    /* margin-left: 8rem; */
+    font-size: 17px;
+    color: green;
+    margin-bottom: 0px;
 }
