@@ -50,7 +50,7 @@ export default function App() {
               onChange={(e) => setEmail(e.target.value)}
             />
             <br />
-            {userError && <p id="user-error">{userError}</p>}
+            {/* {userError && } */}
           </div>
           <div className="form-input">
             <label htmlFor="input-password">Password:</label>
@@ -64,7 +64,7 @@ export default function App() {
               onChange={(e) => setPassword(e.target.value)}
             />
             <br />
-            {passwordError && <p id="password-error">{passwordError}</p>}
+            {/* {passwordError && } */}
           </div>
           <div className="form-btn">
             <button type="submit" id="submit-form-btn" onClick={(e)=>{
@@ -72,13 +72,13 @@ export default function App() {
             }} >
               Submit
             </button>
-            {Success && <p id="success">{Success}</p>}
+            {/* {Success &&} */}
           </div>
-        {/* <div className="display-error">
-            
-            
-            
-        </div> */}
+        <div className="display-error">
+            <p id="password-error">{passwordError}</p>
+            <p id="user-error">{userError}</p>
+            <p id="success">{Success}</p>
+        </div>
         </div>
       </form>
     </div>
