@@ -30,7 +30,7 @@ export default function App() {
             setSuccess("Successfully Login");
         }
 
-    }, 3);
+    }, 3000);
     
   }
 
